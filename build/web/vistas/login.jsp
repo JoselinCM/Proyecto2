@@ -41,14 +41,14 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4"><b>¡Bienvenido de nuevo!</b></h1>
                                     </div>
-                                    <form class="user">
+                                    <form class="user" action="Validar" method="POST">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
+                                            <input type="email" name="txtemail" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
                                                 placeholder="Correo electrónico...">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
+                                            <input type="password" name="txtpass" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Contraseña">
                                         </div>
                                         <div class="form-group">
@@ -57,9 +57,12 @@
                                                 <label class="custom-control-label" for="customCheck">Recordar</label>
                                             </div>
                                         </div>
+                                        <input type="submit" name="accion" value="Iniciar Sesión" class="btn btn-primary btn-user btn-block">
+                                        <!--
                                         <a href="panel-admin.jsp" class="btn btn-primary btn-user btn-block">
                                             Iniciar Sesión
                                         </a>
+                                        -->
                                         <hr>
                                         <a href="#" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Iniciar sesión con Google
